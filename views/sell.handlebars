@@ -1,0 +1,156 @@
+<nav class="nav-extended N/A transparent">
+    <div class="nav-background">
+        <div class="pattern active"
+            style="background-image: url('https://images.unsplash.com/photo-1455612693675-112974d4880b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=500&q=60');">
+        </div>
+    </div>
+    <div class="nav-wrapper container">
+        <a href="/" class="brand-logo"><i class="material-icons">desktop_windows</i>BRB</a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/">BUY</a></li>
+            <li><a href="/sell">SELL</a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+
+
+        <div class="nav-header center">
+            <h1 class="signupheader">The Form!</h1>
+            <div class="tagline signuptag">We'd love to help you, but we'll BRB.</div>
+        </div>
+    </div>
+</nav>
+<ul class="sidenav" id="nav-mobile">
+    <li class="active"><a href="/"><i class="material-icons">import_export</i>Buy</a></li>
+    <li><a href="/sell"><i class="material-icons">attach_money</i>Sell</a></li>
+</ul>
+<div class="container">
+    <div class="row">
+        <form id="newLaptop" class="col s12 formcolor">
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_box</i>
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">contact_mail</i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">local_phone</i>
+                    <input id="number" type="text" class="validate">
+                    <label for="number">Phone Number</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">location_city</i>
+                    <input id="city" type="text" class="validate">
+                    <label for="city">City</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="brand" type="text" class="validate">
+                    <label for="brand">Brand</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="model" type="text" class="validate">
+                    <label for="model">Model of Laptop</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <select id="os">
+                        <option value="" selected>Choose your option</option>
+                        <option value="mac">mac</option>
+                        <option value="windows">windows</option>
+                    </select>
+                    <label>OPERATING SYSTEM</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="condition">
+                        <option value="" selected> Choose your option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label>Condition of Laptop</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="processor" type="text" class="validate">
+                    <label for="processor">Processor</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="graphics" type="text" class="validate">
+                    <label for="graphics">Graphics Card</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="ram" type="text" class="validate">
+                    <label for="ram">Ram</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="screen" type="text" class="validate">
+                    <label for="screen">Screen Dimension</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="storage" type="text" class="validate">
+                    <label for="storage">Storage</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="year" type="text" class="validate">
+                    <label for="year">Year Released</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="summary" class="materialize-textarea"></textarea>
+                    <label for="summary">Summary</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="price" type="text" class="validate">
+                    <label for="price">How much would you like for this computer?</label>
+                </div>
+            </div>
+            <div class="file-field input-field">
+
+
+                <div class="btn">
+                    <span>Main Picture</span>
+                    <input type="file" value="upload" id="mainPictureButton">
+                </div>
+
+                <div class="file-path-wrapper">
+                    <input id="mainphoto" class="file-path validate" type="text" placeholder="<--- Click here">
+                </div>
+                <progress value="0" max="100" id="uploader">0%</progress>
+            </div>
+            {{!-- <div class="file-field input-field">
+                <div class="btn">
+                    <span>Additional Photos?</span>
+                    <input type="file" value="upload" id="secondaryPictureButton" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                    <input id="additionalPhotos" class="file-path validate" type="text" placeholder="<--- Click here">
+                </div>
+                <progress value="0" max="100" id="secondaryUploader">0%</progress>
+            </div> --}}
+            <button class="btn waves-effect" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+        {{!-- ADD A SOLD BUTTON TO THE CARDS --}}
+    </div>
+</div>

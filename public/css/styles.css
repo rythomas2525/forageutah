@@ -1,0 +1,17 @@
+.navTEXT {
+    font-size: 18px!important;
+    color: white!important;
+    text-shadow: 2px 3px black;
+}
+.signuptag {
+    font-size: 12px;
+}
+.signupheader {
+    text-shadow: 2px 3px black;
+}
+input {
+    color: white!important;
+}
+textarea {
+    color: white!important;
+}
